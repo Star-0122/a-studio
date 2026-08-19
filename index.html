@@ -8,18 +8,22 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="site-nav" aria-label="ページナビゲーション">
-  <a href="#page1">P1</a><a href="#page2">P2</a><a href="#page3">P3</a><a href="#page4">P4</a><a href="#page5">P5</a><a href="#page6">P6</a><a href="#page7">P7</a>
-</nav>
-<main>
-  <section class="page" id="page1"><div class="page-card"><p><strong>Aスタジオ｜1ページ目</strong>22日にCanvaから受け取るPNGをここに配置します。</p></div></section>
-  <section class="page" id="page2"><div class="page-card"><p><strong>Aスタジオ｜2ページ目</strong>Canvaの2ページ目をここに配置します。</p></div></section>
-  <section class="page" id="page3"><div class="page-card"><p><strong>Aスタジオ｜3ページ目</strong>Canvaの3ページ目をここに配置します。</p></div></section>
-  <section class="page" id="page4"><div class="page-card"><p><strong>Aスタジオ｜4ページ目</strong>Canvaの4ページ目をここに配置します。</p></div></section>
-  <section class="page" id="page5"><div class="page-card"><p><strong>Aスタジオ｜5ページ目</strong>Canvaの5ページ目をここに配置します。</p></div></section>
-  <section class="page" id="page6"><div class="page-card"><p><strong>Aスタジオ｜6ページ目</strong>Canvaの6ページ目をここに配置します。</p></div></section>
-  <section class="page" id="page7"><div class="page-card"><p><strong>Aスタジオ｜7ページ目</strong>Canvaの7ページ目をここに配置します。</p></div></section>
+<header class="topbar">
+  <a class="brand" href="#page1" aria-label="Aスタジオ ホーム">Aスタジオ</a>
+  <nav aria-label="ページナビゲーション">
+    <a href="#page1">1</a><a href="#page2">2</a><a href="#page3">3</a><a href="#page4">4</a><a href="#page5">5</a><a href="#page6">6</a><a href="#page7">7</a>
+  </nav>
+</header>
+<main id="app">
+  <section class="page" id="page1"><div class="design"><img src="images/page1.png" alt="Aスタジオ 1ページ目" loading="eager"><div class="hotspots" data-page="1"></div></div></section>
+  <section class="page" id="page2"><div class="design"><img src="images/page2.png" alt="Aスタジオ 2ページ目" loading="lazy"><div class="hotspots" data-page="2"></div></div></section>
+  <section class="page" id="page3"><div class="design"><img src="images/page3.png" alt="Aスタジオ 3ページ目" loading="lazy"><div class="hotspots" data-page="3"></div></div></section>
+  <section class="page" id="page4"><div class="design"><img src="images/page4.png" alt="Aスタジオ 4ページ目" loading="lazy"><div class="hotspots" data-page="4"></div></div></section>
+  <section class="page" id="page5"><div class="design"><img src="images/page5.png" alt="Aスタジオ 5ページ目" loading="lazy"><div class="hotspots" data-page="5"></div></div></section>
+  <section class="page" id="page6"><div class="design"><img src="images/page6.png" alt="Aスタジオ 6ページ目" loading="lazy"><div class="hotspots" data-page="6"></div></div></section>
+  <section class="page" id="page7"><div class="design"><img src="images/page7.png" alt="Aスタジオ 7ページ目" loading="lazy"><div class="hotspots" data-page="7"></div></div></section>
 </main>
 <footer>Aスタジオ｜えぇ思い出を、えぇ動画で。</footer>
+<script src="script.js"></script>
 </body>
 </html>
