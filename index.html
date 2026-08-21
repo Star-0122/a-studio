@@ -5,99 +5,28 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aスタジオ | えぇ思い出を、えぇ動画で。</title>
 <meta name="description" content="Aスタジオ｜えぇ思い出を、えぇ動画で。">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="#home"><span class="logo-mark">A<span>◦</span></span><strong>Aスタジオ</strong></a>
+  <a class="brand" href="#home" aria-label="Aスタジオ ホーム"><img src="logo.svg" alt="Aスタジオ ロゴ"><strong>Aスタジオ</strong></a>
   <nav class="main-nav" aria-label="メインナビゲーション">
-    <a href="#home" data-page="home">⌂ ホーム</a>
-    <a href="#notice" data-page="notice">Notice</a>
-    <a href="#movie" data-page="movie">Movie</a>
-    <a href="#memories" data-page="memories">Memories</a>
-    <a href="#connect" data-page="connect">Connect</a>
-    <a href="#about" data-page="about">About</a>
+    <a href="#home" data-page="home">⌂ ホーム</a><a href="#notice" data-page="notice">Notice</a><a href="#movie" data-page="movie">Movie</a><a href="#memories" data-page="memories">Memories</a><a href="#connect" data-page="connect">Connect</a><a href="#about" data-page="about">About</a>
   </nav>
 </header>
-
 <main>
 <section id="home" class="page home-page">
-  <div class="hero-copy">
-    <h1>Aスタジオ</h1>
-    <p class="lead">えぇ思い出を、えぇ動画で。</p>
-    <p class="sublead">これまでに作った動画を、いつでも、どこでも。</p>
-    <a class="primary-btn" href="#movie">▶ おすすめ動画を見る</a>
-  </div>
-  <div class="hero-art" aria-label="家族で動画を見るイラスト">
-    <div class="art-lamp">⌒</div><div class="art-bunting">△ ▽ △ ▽</div>
-    <div class="tv"><div class="tv-screen"><span>☁️　🌳　🌳</span><b>🏃　🏃</b></div><div class="tv-stand"></div></div>
-    <div class="family">👨　👦　👧　👩</div>
-    <div class="sofa"></div>
-  </div>
-  <div class="home-categories">
-    <a href="#movie" class="category-card"><span class="icon blue">☂</span><span><b>Summer vacation</b><small>夏休み</small></span></a>
-    <a href="#movie" class="category-card"><span class="icon coral">☀</span><span><b>New Year's</b><small>冬休み・お正月</small></span></a>
-    <a href="#movie" class="category-card"><span class="icon green">✈</span><span><b>Travel</b><small>旅行・おでかけ</small></span></a>
-    <a href="#movie" class="category-card"><span class="icon mint">🎈</span><span><b>Event</b><small>イベント</small></span></a>
-    <a href="#memories" class="category-card"><span class="icon purple">✦</span><span><b>Memory</b><small>家族・思い出</small></span></a>
-    <a href="#movie" class="category-card"><span class="icon orange">★</span><span><b>Others</b><small>その他</small></span></a>
-  </div>
-  <div class="home-message"><div><h2>動画は、思い出をつなぐ。</h2><p>人と人、過去と今をつなぐ。<br>関連する動画や思い出をたどって、ひとつの出来事から次の思い出へ。</p></div><div class="message-icons"><span>🍦<b>夏休み</b></span><span>🎬<b>冬休み</b></span><span>✈️<b>旅行</b></span><span>🎉<b>イベント</b></span></div></div>
+  <div class="hero-copy"><h1>Aスタジオ</h1><p class="lead">えぇ思い出を、えぇ動画で。</p><p class="sublead">これまでに作った動画を、いつでも、どこでも。</p><a class="primary-btn" href="#movie">▶ おすすめ動画を見る</a></div>
+  <div class="hero-art" aria-hidden="true"><div class="lamp"></div><div class="bunting">◢ ◣ ◢ ◣</div><div class="plant plant-left">🌿</div><div class="plant plant-right">🌿</div><div class="tv"><div class="tv-screen"><span>☁︎　🌳　🌳</span><b>🏃　🏃</b></div><div class="tv-stand"></div></div><div class="family"><span>👨</span><span>👦</span><span>👧</span><span>👩</span></div><div class="sofa"></div></div>
+  <div class="home-categories"><a href="#movie" class="category-card"><span class="icon blue">☂</span><span><b>Summer vacation</b><small>夏休み</small></span></a><a href="#movie" class="category-card"><span class="icon coral">☀</span><span><b>New Year's</b><small>冬休み・お正月</small></span></a><a href="#movie" class="category-card"><span class="icon green">✈</span><span><b>Travel</b><small>旅行・おでかけ</small></span></a><a href="#movie" class="category-card"><span class="icon mint">🎈</span><span><b>Event</b><small>イベント</small></span></a><a href="#memories" class="category-card"><span class="icon purple">✦</span><span><b>Memory</b><small>家族・思い出</small></span></a><a href="#movie" class="category-card"><span class="icon orange">★</span><span><b>Others</b><small>その他</small></span></a></div>
+  <div class="home-message"><div><h2>動画は、思い出をつなぐ。</h2><p>人と人、過去と今をつなぐ。<br>関連する動画や思い出をたどって、ひとつの出来事から次の思い出へ。</p></div><div class="message-icons"><a href="#movie">🍦<b>夏休み</b></a><a href="#movie">🎬<b>冬休み</b></a><a href="#movie">✈️<b>旅行</b></a><a href="#movie">🎉<b>イベント</b></a></div></div>
 </section>
-
-<section id="notice" class="page content-page">
-  <div class="eyebrow">notice ｜ お知らせ</div><h2>つくった動画を、見やすく。</h2>
-  <div class="notice-list">
-    <div><i>NEW</i><b>公開情報</b><span>みのるん 卒業お祝い動画 を公開しました。</span></div>
-    <div><i>NEW</i><b>公開情報</b><span>2026 淡路旅行 を公開しました。</span></div>
-    <div><i>NEW</i><b>公開情報</b><span>2026 お正月 を公開しました。</span></div>
-    <div><i>NEW</i><b>公開情報</b><span>2026 夏休み を公開しました。</span></div>
-    <div><i>NEW</i><b>公開情報</b><span>2025 夏休み を公開しました。</span></div>
-  </div>
-  <div class="notice-last"><i>NEW</i><b>公開情報</b><span>本ホームページを公開しました。</span></div>
-</section>
-
-<section id="movie" class="page content-page movie-page">
-  <div class="eyebrow">Movie ｜ 動画</div><h2>つくった動画を、見やすく。</h2>
-  <div class="movie-grid category-grid">
-    <a class="movie-category" href="#movie-list"><span class="icon blue">☂</span><span><b>Summer vacation</b><small>夏休み</small></span></a>
-    <a class="movie-category" href="#movie-list"><span class="icon coral">☀</span><span><b>New Year's</b><small>冬休み・お正月</small></span></a>
-    <a class="movie-category" href="#movie-list"><span class="icon green">✈</span><span><b>Travel</b><small>旅行・おでかけ</small></span></a>
-    <a class="movie-category" href="#movie-list"><span class="icon mint">🎈</span><span><b>Event</b><small>イベント</small></span></a>
-    <a class="movie-category" href="#movie-list"><span class="icon purple">✦</span><span><b>Memory</b><small>家族・思い出</small></span></a>
-    <a class="movie-category" href="#movie-list"><span class="icon orange">★</span><span><b>Others</b><small>その他</small></span></a>
-  </div>
-  <a class="all-link" href="#movie-list">すべての動画を見る →</a>
-</section>
-
-<section id="movie-list" class="page content-page list-page">
-  <div class="eyebrow">Movie ｜ 動画</div><h2>つくった動画を、見やすく。</h2>
-  <div class="long-list">
-    <div class="list-category"><div class="list-head"><span class="icon blue">☂</span><b>Summer vacation</b><small>夏休み</small></div><div class="video-card"><span class="thumb summer">SUMMER</span><b>2026 夏休み</b></div><div class="video-card"><span class="thumb blue-thumb">2025 夏休み</span><b>2025 夏休み</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div>
-    <div class="list-category"><div class="list-head"><span class="icon coral">☀</span><b>New Year's</b><small>冬休み・お正月</small></div><div class="video-card"><span class="thumb newyear">謹賀新年</span><b>2026 お正月</b></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div>
-    <div class="list-category"><div class="list-head"><span class="icon green">✈</span><b>Travel</b><small>旅行・おでかけ</small></div><div class="video-card"><span class="thumb travel">淡路</span><b>2026 淡路旅行</b></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div>
-    <div class="list-category"><div class="list-head"><span class="icon mint">🎈</span><b>Event</b><small>イベント</small></div><div class="video-card"><span class="thumb event">古希お祝い</span><b>じいじばあばの古希お祝い</b></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div>
-    <div class="list-category"><div class="list-head"><span class="icon purple">✦</span><b>Memory</b><small>家族・思い出</small></div><div class="video-card"><span class="thumb memory">みのるん</span><b>みのるん 卒業お祝い動画</b></div><div class="video-card muted"><span></span><b>来年 夏 公開！！</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div>
-    <div class="list-category"><div class="list-head"><span class="icon orange">★</span><b>Others</b><small>その他</small></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div>
-  </div>
-</section>
-
-<section id="memories" class="page content-page memories-page">
-  <div class="eyebrow">Memories ｜ 思い出</div><h2>動画だけじゃない、思い出のアルバム。</h2>
-  <div class="memory-feature"><div class="memory-photo">Hello<br><strong>SUMMER</strong></div><div><h3>2026 夏休み</h3><p>また行きたいな！</p></div></div>
-</section>
-
-<section id="connect" class="page content-page connect-page">
-  <div class="eyebrow">Connect ｜ つながる</div><h2>動画は、思い出をつなぐ。</h2>
-  <div class="connect-box"><div><h3>人と人、過去と今をつなぐ。</h3><p>関連する動画や思い出をたどって、ひとつの出来事から次の思い出へ。</p></div><div class="connect-icons"><a href="#movie">🍦<b>夏休み</b></a><a href="#movie">❄️<b>冬休み</b></a><a href="#movie">✈️<b>旅行</b></a><a href="#movie">🎬<b>イベント</b></a></div></div>
-</section>
-
-<section id="about" class="page content-page about-page">
-  <div class="eyebrow">About A Studio</div><h2>Aスタジオについて</h2>
-  <div class="about-box"><div class="big-a">A</div><div><h3>Aスタジオの「A」は「えぇ」。</h3><p class="accent">「えぇ動画」「えぇ思い出」「えぇ時間」。</p><p>そんな「えぇ」を、映像として残して未来へ届けるスタジオです。</p><div class="about-buttons"><a href="#movie">えぇ動画</a><a href="#memories">えぇ思い出</a><a href="#connect">えぇ時間</a></div></div></div>
-</section>
-</main>
-<footer>© Aスタジオ All Rights Reserved.</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<section id="notice" class="page content-page"><div class="eyebrow">notice ｜ お知らせ</div><h2>つくった動画を、見やすく。</h2><div class="notice-list"><div><i>NEW</i><b>公開情報</b><span>みのるん 卒業お祝い動画 を公開しました。</span></div><div><i>NEW</i><b>公開情報</b><span>2026 淡路旅行 を公開しました。</span></div><div><i>NEW</i><b>公開情報</b><span>2026 お正月 を公開しました。</span></div><div><i>NEW</i><b>公開情報</b><span>2026 夏休み を公開しました。</span></div><div><i>NEW</i><b>公開情報</b><span>2025 夏休み を公開しました。</span></div></div><div class="notice-last"><i>NEW</i><b>公開情報</b><span>本ホームページを公開しました。</span></div></section>
+<section id="movie" class="page content-page movie-page"><div class="eyebrow">Movie ｜ 動画</div><h2>つくった動画を、見やすく。</h2><div class="movie-grid category-grid"><a class="movie-category" href="#movie-list"><span class="icon blue">☂</span><span><b>Summer vacation</b><small>夏休み</small></span></a><a class="movie-category" href="#movie-list"><span class="icon coral">☀</span><span><b>New Year's</b><small>冬休み・お正月</small></span></a><a class="movie-category" href="#movie-list"><span class="icon green">✈</span><span><b>Travel</b><small>旅行・おでかけ</small></span></a><a class="movie-category" href="#movie-list"><span class="icon mint">🎈</span><span><b>Event</b><small>イベント</small></span></a><a class="movie-category" href="#movie-list"><span class="icon purple">✦</span><span><b>Memory</b><small>家族・思い出</small></span></a><a class="movie-category" href="#movie-list"><span class="icon orange">★</span><span><b>Others</b><small>その他</small></span></a></div><a class="all-link" href="#movie-list">すべての動画を見る →</a></section>
+<section id="movie-list" class="page content-page list-page"><div class="eyebrow">Movie ｜ 動画</div><h2>つくった動画を、見やすく。</h2><div class="long-list"><div class="list-category"><div class="list-head"><span class="icon blue">☂</span><b>Summer vacation</b><small>夏休み</small></div><a class="video-card" href="#memories"><span class="thumb summer">SUMMER</span><b>2026 夏休み</b></a><div class="video-card"><span class="thumb blue-thumb">2025 夏休み</span><b>2025 夏休み</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div><div class="list-category"><div class="list-head"><span class="icon coral">☀</span><b>New Year's</b><small>冬休み・お正月</small></div><div class="video-card"><span class="thumb newyear">謹賀新年</span><b>2026 お正月</b></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div><div class="list-category"><div class="list-head"><span class="icon green">✈</span><b>Travel</b><small>旅行・おでかけ</small></div><div class="video-card"><span class="thumb travel">淡路</span><b>2026 淡路旅行</b></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div><div class="list-category"><div class="list-head"><span class="icon mint">🎈</span><b>Event</b><small>イベント</small></div><div class="video-card"><span class="thumb event">古希お祝い</span><b>じいじばあばの古希お祝い</b></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div><div class="list-category"><div class="list-head"><span class="icon purple">✦</span><b>Memory</b><small>家族・思い出</small></div><div class="video-card"><span class="thumb memory">みのるん</span><b>みのるん 卒業お祝い動画</b></div><div class="video-card muted"><span></span><b>来年 夏 公開！！</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div><div class="list-category"><div class="list-head"><span class="icon orange">★</span><b>Others</b><small>その他</small></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div><div class="video-card muted"><span></span><b>未公開</b></div></div></div></section>
+<section id="memories" class="page content-page memories-page"><div class="eyebrow">Memories ｜ 思い出</div><h2>動画だけじゃない、思い出のアルバム。</h2><div class="memory-feature"><div class="memory-photo">Hello<br><strong>SUMMER</strong></div><div><h3>2026 夏休み</h3><p>また行きたいな！</p></div></div></section>
+<section id="connect" class="page content-page connect-page"><div class="eyebrow">Connect ｜ つながる</div><h2>動画は、思い出をつなぐ。</h2><div class="connect-box"><div><h3>人と人、過去と今をつなぐ。</h3><p>関連する動画や思い出をたどって、ひとつの出来事から次の思い出へ。</p></div><div class="connect-icons"><a href="#movie">🍦<b>夏休み</b></a><a href="#movie">❄️<b>冬休み</b></a><a href="#movie">✈️<b>旅行</b></a><a href="#movie">🎬<b>イベント</b></a></div></div></section>
+<section id="about" class="page content-page about-page"><div class="eyebrow">About A Studio</div><h2>Aスタジオについて</h2><div class="about-box"><div class="big-a">A</div><div><h3>Aスタジオの「A」は「えぇ」。</h3><p class="accent">「えぇ動画」「えぇ思い出」「えぇ時間」。</p><p>そんな「えぇ」を、映像として残して未来へ届けるスタジオです。</p><div class="about-buttons"><a href="#movie">えぇ動画</a><a href="#memories">えぇ思い出</a><a href="#connect">えぇ時間</a></div></div></div></section>
+</main><footer>© Aスタジオ All Rights Reserved.</footer><script src="script.js"></script>
+</body></html>
