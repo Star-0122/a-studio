@@ -1,17 +1,44 @@
-const navLinks=[...document.querySelectorAll('.main-nav a')];
-const sections=[...document.querySelectorAll('.page')];
-function setActive(){
-  const hash=location.hash.replace('#','')||'home';
-  const page=hash==='movie-list'?'movie':hash;
-  navLinks.forEach(a=>a.classList.toggle('active',a.dataset.page===page));
-}
-window.addEventListener('hashchange',setActive);
-window.addEventListener('load',setActive);
+const navLinks = [...document.querySelectorAll('.main-nav a')];
+const pages = ['home', 'notice', 'movie', 'movie-list', 'memories', 'connect', 'about'];
 
-// カードやカテゴリをクリックしたときに、対応するページへ移動するための共通処理。
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',()=>{
-    const target=document.querySelector(a.getAttribute('href'));
-    if(target) setTimeout(()=>target.scrollIntoView({behavior:'smooth',block:'start'}),0);
+function currentPage() {
+  const hash = location.hash.replace('#', '');
+  return pages.includes(hash) ? hash : 'home';
+}
+
+function setActive() {
+  const page = currentPage();
+  const navPage = page === 'movie-list' ? 'movie' : page;
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.dataset.page === navPage);
+  });
+  document.title = page === 'home'
+    ? 'Aスタジオ | えぇ思い出を、えぇ動画で。'
+    : `Aスタジオ | ${page}`;
+}
+
+function scrollToHash() {
+  const id = currentPage();
+  const target = document.getElementById(id);
+  if (!target) return;
+  requestAnimationFrame(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+}
+
+window.addEventListener('hashchange', () => {
+  setActive();
+  scrollToHash();
+});
+window.addEventListener('load', () => {
+  setActive();
+  const hash = location.hash;
+  if (hash) scrollToHash();
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', () => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0);
+    }
   });
 });
