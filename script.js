@@ -24,11 +24,24 @@ function scrollToHash() {
   requestAnimationFrame(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }));
 }
 
+function installLogo() {
+  const mark = document.querySelector('.logo-mark');
+  if (!mark || mark.dataset.logoInstalled) return;
+  mark.dataset.logoInstalled = 'true';
+  mark.textContent = '';
+  const img = document.createElement('img');
+  img.src = 'logo.svg';
+  img.alt = 'Aスタジオ ロゴ';
+  img.className = 'brand-logo-image';
+  mark.appendChild(img);
+}
+
 window.addEventListener('hashchange', () => {
   setActive();
   scrollToHash();
 });
 window.addEventListener('load', () => {
+  installLogo();
   setActive();
   const hash = location.hash;
   if (hash) scrollToHash();
