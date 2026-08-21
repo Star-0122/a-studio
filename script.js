@@ -35,6 +35,16 @@ function installLogo() {
   img.className = 'brand-logo-image';
   img.style.cssText = 'width:100%;height:100%;display:block;object-fit:contain;border-radius:5px;';
   mark.appendChild(img);
+
+  let favicon = document.querySelector('link[data-a-studio-favicon]');
+  if (!favicon) {
+    favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/svg+xml';
+    favicon.dataset.aStudioFavicon = 'true';
+    document.head.appendChild(favicon);
+  }
+  favicon.href = 'logo.svg';
 }
 
 window.addEventListener('hashchange', () => {
