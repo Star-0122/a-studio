@@ -1,0 +1,68 @@
+const navLinks = [...document.querySelectorAll('.main-nav a')];
+const pages = ['home', 'notice', 'movie', 'movie-list', 'memories', 'connect', 'about'];
+
+function currentPage() {
+  const hash = location.hash.replace('#', '');
+  return pages.includes(hash) ? hash : 'home';
+}
+
+function setActive() {
+  const page = currentPage();
+  const navPage = page === 'movie-list' ? 'movie' : page;
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.dataset.page === navPage);
+  });
+  document.title = page === 'home'
+    ? 'Aスタジオ | えぇ思い出を、えぇ動画で。'
+    : `Aスタジオ | ${page}`;
+}
+
+function scrollToHash() {
+  const id = currentPage();
+  const target = document.getElementById(id);
+  if (!target) return;
+  requestAnimationFrame(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+}
+
+function installLogo() {
+  const mark = document.querySelector('.logo-mark');
+  if (!mark || mark.dataset.logoInstalled) return;
+  mark.dataset.logoInstalled = 'true';
+  mark.textContent = '';
+  const img = document.createElement('img');
+  img.src = 'logo.svg';
+  img.alt = 'Aスタジオ ロゴ';
+  img.className = 'brand-logo-image';
+  img.style.cssText = 'width:100%;height:100%;display:block;object-fit:contain;border-radius:5px;';
+  mark.appendChild(img);
+
+  let favicon = document.querySelector('link[data-a-studio-favicon]');
+  if (!favicon) {
+    favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/svg+xml';
+    favicon.dataset.aStudioFavicon = 'true';
+    document.head.appendChild(favicon);
+  }
+  favicon.href = 'logo.svg';
+}
+
+window.addEventListener('hashchange', () => {
+  setActive();
+  scrollToHash();
+});
+window.addEventListener('load', () => {
+  installLogo();
+  setActive();
+  const hash = location.hash;
+  if (hash) scrollToHash();
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', () => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0);
+    }
+  });
+});
