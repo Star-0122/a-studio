@@ -33,6 +33,7 @@ function installLogo() {
   img.src = 'logo.svg';
   img.alt = 'Aスタジオ ロゴ';
   img.className = 'brand-logo-image';
+  img.style.cssText = 'width:100%;height:100%;display:block;object-fit:contain;border-radius:5px;';
   mark.appendChild(img);
 }
 
