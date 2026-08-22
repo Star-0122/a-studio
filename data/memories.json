@@ -1,0 +1,13 @@
+{
+  "videos": [
+    {"id":"summer-2026","title":"2026 夏休み","year":2026,"category":"Summer vacation","categoryJa":"夏休み","status":"public","url":"#memories","related":["summer-memory-2026"]},
+    {"id":"summer-2025","title":"2025 夏休み","year":2025,"category":"Summer vacation","categoryJa":"夏休み","status":"public","url":"#memories","related":[]},
+    {"id":"newyear-2026","title":"2026 お正月","year":2026,"category":"New Year's","categoryJa":"冬休み・お正月","status":"public","url":"#memories","related":[]},
+    {"id":"awaji-2026","title":"2026 淡路旅行","year":2026,"category":"Travel","categoryJa":"旅行・おでかけ","status":"public","url":"#memories","related":[]},
+    {"id":"koki","title":"じいじばあばの古希お祝い","year":2026,"category":"Event","categoryJa":"イベント","status":"public","url":"#memories","related":[]},
+    {"id":"minoru-graduation","title":"みのるん 卒業お祝い動画","year":2026,"category":"Memory","categoryJa":"家族・思い出","status":"public","url":"#memories","related":[]}
+  ],
+  "memories": [
+    {"id":"summer-memory-2026","title":"2026 夏休み","date":"2026-08-01","category":"Summer vacation","text":"また行きたいな！","photos":[],"relatedVideos":["summer-2026"]}
+  ]
+}
